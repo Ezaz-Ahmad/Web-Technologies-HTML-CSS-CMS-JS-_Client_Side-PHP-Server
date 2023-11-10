@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Sat, 30 Sep 2023 09:15:19 +0000</pubDate><title><![CDATA[Contact us]]></title><url><![CDATA[contact-us]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Contact us]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h2>Contact Learning Ladder</h2>
+<!-- this block of code is for making the form-->
+
+<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post"><label for="name" style="color: black;">Name:</label> <input id="name" name="name" required="" type="text" /><br />
+<label for="email" style="color: black;">Email:</label> <input id="email" name="email" required="" type="email" /><br />
+<label for="subject" style="color: black;">Subject:</label> <input id="subject" name="subject" required="" type="text" /><br />
+<label for="message" style="color: black;">Message:</label><textarea id="message" name="message" required="" rows="5"></textarea><br />
+<label style="color: black;">priority</label> <input id="priorityyes" name="priority" required="" type="radio" value="Yes" /> <label for="priorityyes" style="color: black;">Yes</label> <input id="priorityno" name="priority" required="" type="radio" value="No" /> <label for="priorityno" style="color: black;">No</label>
+
+<div class="button-container"><input type="submit" value="Submit" /> <input type="reset" value="Clear" /></div>
+</form>
+]]></content><private><![CDATA[]]></private><author><![CDATA[ezaz]]></author></item>

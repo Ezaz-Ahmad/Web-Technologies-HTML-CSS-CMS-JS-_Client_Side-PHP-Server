@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE games [
+    <!ELEMENT games (category?, game+)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT game (name, description, subject, gradeLevel, searchTag*, cost?, equipment?, review*, imageFilename*, url)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT gradeLevel (#PCDATA)>
+    <!ELEMENT searchTag (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipment (name, additionalCost?)>
+    <!ELEMENT review (#PCDATA)>
+    <!ATTLIST review score (0|1|2|3|4|5) "5">
+    <!ELEMENT imageFilename (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+]>
+
+
+<games>
+    <category>Racing Games</category>
+
+    <!-- this block is for needfor speed-->
+    <game>
+        <name>Need for Speed</name>
+        <description>Need for Speed (NFS) is a racing game franchise published by Electronic Arts and currently 
+        developed by Criterion Games, the developers of Burnout. The series generally centers around illegal street 
+        racing and tasks players to complete various types of races while evading the local law enforcement
+         in police pursuits.</description>
+        <subject>Racing</subject>
+        <gradeLevel>University 1st year</gradeLevel>
+        <searchTag>racing</searchTag>
+        <searchTag>cars</searchTag>
+        <cost>$40</cost>
+        <equipment>
+            <name>PC</name>
+            <additionalCost>Included</additionalCost>
+        </equipment>
+        <review score="5">A legendary raching game</review>
+        <imageFilename>data/uploads/needforspeed.png</imageFilename>
+        <url>https://www.needforspeed.com</url>
+    </game>
+
+    <!-- this block is for Asphalt 9-->
+    <game>
+        <name>Asphalt 9: Legends</name>
+        <description>Legends for FREE, race other players, and add renowned cars to your garage. 
+        Collect over 100 hypercars (and counting), and race with the most prestigious manufacturers,
+         such as Ferrari, Porsche, and Lamborghini. Drift, boost and knock down your rivals in 
+         adrenaline-filled real-world locations</description>
+        <subject>Racing</subject>
+        <gradeLevel>University 1st year</gradeLevel>
+        <searchTag>racing</searchTag>
+        <searchTag>cars</searchTag>
+        <cost>$70</cost>
+        <equipment>
+            <name>Mobile</name>
+        </equipment>
+        <review score="5">Unique mobile games</review>
+        <imageFilename>data/uploads/asp9.png</imageFilename>
+        <url>https://www.gameloft.com/asphalt9</url>
+    </game>
+
+    <!--this block is for Real raching-->
+    <game>
+        <name>Real Raching </name>
+        <description>a racing app where players work through a series of different racing tracks,
+         earning experience and in-game money that can be used to get better cars and race through 
+         more challenging courses.</description>
+        <subject>Racing</subject>
+        <gradeLevel>grade 10</gradeLevel>
+        <searchTag>racing</searchTag>
+        <searchTag>cars</searchTag>
+        <cost>Free</cost>
+        <equipment>
+            <name>Mobile</name>
+        </equipment>
+        <review score="4">very interesting</review>
+        <imageFilename>data/uploads/realraching.png</imageFilename>
+        <url>https://www.ea.com/games/real-racing/real-racing-3</url>
+    </game>
+
+</games>

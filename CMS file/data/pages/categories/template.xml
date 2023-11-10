@@ -1,0 +1,21 @@
+<category>
+    <games>
+        <!-- Each game will be added here in the structure:
+        <game>
+            <name>Game Name</name>
+            <description>Game Description</description>
+            <equipments>
+                <equipment>
+                    <equipmentName>Some Equipment</equipmentName>
+                    <additionalCost>Some Cost</additionalCost>
+                </equipment>
+                ... other equipments ...
+            </equipments>
+            <reviews>
+                <review>Some Review</review>
+                ... other reviews ...
+            </reviews>
+        </game>
+        -->
+    </games>
+</category>

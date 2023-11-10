@@ -1,0 +1,261 @@
+/*
+                    Name: Ezaz Ahmad
+                    ID: c3412618
+                    Course: Web Technologies(SENG1050)
+
+                 */
+/* start working with the body of each page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color: white; 
+    margin-left: 1cm;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-image: url('images/index.jpg');
+}
+/* This block is for my navication bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: red;
+}
+
+
+
+/* this is for my dropdown menue for game list */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    background-color: #f9f9f9;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    
+    text-decoration: underline;
+    margin-top: 20px;
+}
+/* Styling my welcome text */
+.welcome-text {
+    
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+/* here working with the design for gamelist */
+.games-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; 
+    list-style: none; 
+}
+
+
+.games-list li {
+    flex-basis: calc(33.33% - 10px); 
+    margin: 5px; 
+    text-align: center; 
+}
+
+
+.games-list img {
+    max-width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.games-list p {
+    margin-top: 10px; 
+}
+
+
+form {
+    width: 60%; 
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* This block is for my contact form */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: green;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; 
+}
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    margin: 15px; 
+}
+/* This block of css code is for the registration page */
+#regForm, 
+#regForm input, 
+#regForm select, 
+#regForm textarea, 
+#regForm label, 
+#regForm p {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) 
+{
+    .navbar {
+        height: 60px; 
+    }
+    .navbar li {
+        margin: 0 5px; 
+    }
+    .games-list li {
+        flex-basis: 100%; 
+    }
+    form {
+        width: 90%; 
+    }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) 
+{
+    .games-list li {
+        flex-basis: calc(50% - 10px); 
+    }
+    form {
+        width: 80%; 
+    }
+}
+
+/* Large devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) 
+{
+    .games-list li {
+        flex-basis: calc(33.33% - 10px); 
+    }
+    form {
+        width: 70%; 
+    }
+}
+
+/* This block of css code is for my footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    color: black;
+    padding: 3px 10px;
+    width: calc(100% - 40px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+    margin-left: 5px;
+}
+footer a:hover {
+    background-color: red; 
+    color: white; 
+    text-decoration: underline; 
+}
+
+
+
+
+

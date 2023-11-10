@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Sat, 30 Sep 2023 12:44:28 +0000</pubDate><title><![CDATA[Index]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Home]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="style.css" rel="stylesheet" />
+<h1>WELCOME TO LEARNING LADDER</h1>
+
+<h2>ABOUT LEARNING LADDER</h2>
+
+<p class="welcome-text">Its all about games production, Games can improve student engagement, learning, and memory retention when used properly, according to recent studies on the benefits of gamification in education. In order to provide entertaining games and activities for subjects at all levels, from preschool to university level, a multi-national collection of instructors, teachers, and educators have created a central repository.</p>
+
+<h2>FEATURED GAMES</h2>
+
+<ul class="games-list">
+	<li><img alt="Game 1" src="data/uploads/pubg.png" />
+		<p><strong>Game 1:</strong> PUBG is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive.</p>
+	</li>
+	<li><img alt="Game 2" src="data/uploads/freefire.png" />
+		<p><strong>Game 2:</strong> Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible.</p>
+	</li>
+	<li><img alt="Game 3" src="data/uploads/clashofclans.png" />
+		<p><em>Game 3:</em> a group of people, as a clique, set, society, or party, especially as united by some common trait, characteristic, or interest: a clan of actors and directors. Anthropology. the principal social unit of tribal organization, in which descent is reckoned exclusively in either the paternal or the maternal line.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><br />
+	<!-- working with the footer--></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></content><private><![CDATA[]]></private><author><![CDATA[ezaz]]></author></item>

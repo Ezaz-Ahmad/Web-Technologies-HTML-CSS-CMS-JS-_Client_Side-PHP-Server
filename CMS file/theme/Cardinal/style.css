@@ -1,0 +1,249 @@
+/*
+                    Name: Ezaz Ahmad
+                    ID: c3412618
+                    Course: Web Technologies(SENG1050)
+
+                 */
+/* start working with the body of each page */
+.main{
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color:white; 
+    margin-left: 1cm;
+    background-image: url('image/index.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.about {
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color:white; 
+    margin-left: 1cm;
+    background-image: url('image/about.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.contact{
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color:white; 
+    margin-left: 1cm;
+    background-image: url('image/contact.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.terms{
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color:white; 
+    margin-left: 1cm;
+    background-image: url('image/terms.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.policy{
+    font-family: Arial, sans-serif;
+    background-color: #EAF3FF; 
+    color:white; 
+    margin-left: 1cm;
+    background-image: url('image/policy.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+/* This block is for my navication bar */
+.navbar {
+    position: fixed;
+    top: 0%;
+    right: 5%;
+    padding: 3px 10px;
+    width: calc(100% - 40px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    background-color:gray;
+    padding: 5px;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+    position: relative; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color:red;
+}
+
+/* this is for my dropdown menue for game list */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    
+    text-decoration: underline;
+    margin-top: 20px;
+}
+/* Styling my welcome text */
+.welcome-text {
+    
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+/* here working with the design for gamelist */
+.games-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; 
+    list-style: none; 
+}
+
+
+.games-list li {
+    flex-basis: calc(33.33% - 10px); 
+    margin: 5px; 
+    text-align: center; 
+}
+
+
+.games-list img {
+    max-width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.games-list p {
+    margin-top: 10px; 
+}
+
+
+form {
+    width: 60%; 
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* This block is for my contact form */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; 
+}
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    margin: 15px; 
+}
+/* This block of css code is for my footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    color: black;
+    padding: 3px 10px;
+    width: calc(100% - 40px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+    margin-left: 5px;
+}
+footer a:hover {
+    background-color: red; 
+    color: white; 
+    text-decoration: underline; 
+}

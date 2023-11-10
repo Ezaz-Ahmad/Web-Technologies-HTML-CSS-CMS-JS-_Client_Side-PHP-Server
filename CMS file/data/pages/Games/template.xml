@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE games [
+    <!ELEMENT games (category?, game+)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT game (name, description, subject, gradeLevel, searchTag*, cost?, equipment?, review*, imageFilename*, url)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT gradeLevel (#PCDATA)>
+    <!ELEMENT searchTag (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipment (name, additionalCost?)>
+    <!ELEMENT review (#PCDATA)>
+    <!ATTLIST review score (0|1|2|3|4|5) "5">
+    <!ELEMENT imageFilename (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+]>
+
+
+<games>
+    <!-- This Block is for goldrush -->
+    <game>
+        <name>goldrush</name>
+        <description>gold rush, rapid influx of fortune seekers to the site of newly discovered gold deposits. 
+        Major gold rushes occurred in the United States, Australia, Canada, 
+        and South Africa in the 19th century. The first major gold strike in North America 
+        occurred near Dahlonega, Georgia, in the late 1820s.</description>
+        <subject>Adventure</subject>
+        <gradeLevel>University 1st year</gradeLevel>
+        <searchTag>multiplayer</searchTag>
+        <searchTag>mobile</searchTag>
+        <cost>$80</cost>
+        <equipment>
+            <name>Mobile</name>
+        </equipment>
+        <review score="4">Unique Experience</review>
+        <imageFilename>data/uploads/goldrush.png</imageFilename>
+        <url>https://www.freefire.com</url>
+        
+    </game>
+
+   <!-- This Block is for Freefire -->
+    <game>
+        <name>FreeFire</name>
+        <description>Free Fire is the ultimate survival shooter 
+                game available on mobile. Each 10-minute game places you on a remote
+                 island where you are pit against 49 other players, all seeking 
+                 survival.</description>
+        <subject>Action</subject>
+        <gradeLevel>University 1st year</gradeLevel>
+        <searchTag>multiplayer</searchTag>
+        <searchTag>mobile</searchTag>
+        <cost>$80</cost>
+        <equipment>
+            <name>Mobile</name>
+        </equipment>
+        <review score="4">Unique Experience</review>
+        <imageFilename>data/uploads/1-freefire.png</imageFilename>
+        <url>https://www.freefire.com</url>
+    </game>
+
+    <!-- This Block is for Clash of clans -->
+    <game>
+        <name>Clash of Clans</name>
+        <description>a group of people, as a clique, set, society, or party,
+                 especially as united by some common trait, characteristic, or interest:
+                  a clan of actors and directors.</description>
+        <subject>Action</subject>
+        <gradeLevel>Grade 10</gradeLevel>
+        <searchTag>strategy</searchTag>
+        <searchTag>multiplayer</searchTag>
+        <cost>Free</cost>
+        <equipment>
+            <name>Mobile</name>
+        </equipment>
+        <review score="4">Attractive</review>
+        <imageFilename>data/uploads/clashofclan.png</imageFilename>
+        <url>https://www.clashofclans.com</url>
+    </game>
+</games>

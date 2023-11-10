@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 10 Oct 2023 23:46:29 +0000</pubDate><title><![CDATA[registration page]]></title><url><![CDATA[registration-page]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[registration page]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Data Collection</title>
+    
+</head>
+<body>
+    <h1>Game Data Collection</h1>
+    
+    <form id="regForm" action="C:/wamp64/www/LearningLadder/submit.php" method="POST" onsubmit="return validateReviews();" >
+        <!-- this section is for the Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name <span class="required">*</span>:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email <span class="required">*</span>:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="previousGames">Previously submitted games:</label>
+            <input type="number" id="previousGames" name="previousGames"><br>
+            <label>Have you taught in the past 5 years?</label>
+            <input type="radio" id="yes" name="taught" value="yes" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="taught" value="no">
+            <label for="no">No</label>
+        </fieldset>
+
+        <!--  this section is for the Game Infomation -->
+        <fieldset>
+            <legend>Game Information</legend>
+            <label for="gameName">Game Name <span class="required">*</span>:</label>
+            <input type="text" id="gameName" name="gameName" required><br>
+            <label for="description">Description <span class="required">*</span>:</label>
+            <textarea id="description" name="description" required></textarea><br>
+            <label for="category">Category <span class="required">*</span>:</label>
+            <select id="category" name="category">
+                <!-- this section is working with catagories -->
+                <option value="existing1">Actions Games</option>
+                <option value="existing1">Racing Games</option>
+                <option value="new">Add New Category</option>
+            </select><br>
+             <!-- this section is for the Equipments -->
+            <div id="equipmentList">
+                <div class="equipmentItem">
+                    <label for="equipmentName">Equipment Name <span class="required">*</span>:</label>
+                    <input type="text" id="equipmentName" name="equipmentName[]" required>
+                    <label for="additionalCost">Additional Cost:</label>
+                    <input type="number" name="additionalCost[]" oninput="updateCostCategory()">
+                    <button type="button" onclick="removeEquipment(this)">Delete Equipment</button>
+                </div>
+            </div>
+            <button type="button" onclick="addEquipment()">Add Equipment</button>
+             <br>
+            <label for="cost">Game Cost:</label>
+            <input type="number" id="cost" name="cost" oninput="updateCostCategory()"><br>
+            <p>Total Cost: <span id="totalCost">$0.00</span></p>
+            <p>Cost Category: <span id="costCategory">Free</span></p>
+            
+           
+            <!-- working with Reviews -->
+            <div id="reviewList">
+                <label for="review">Review:</label>
+                <input type="text" id="review" name="review[]">
+            </div>
+            <button type="button" onclick="addReview()">Add Review</button>
+
+        
+            <label>
+                <input type="checkbox" name="terms" required>
+                I have read the terms and conditions.
+            </label>
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+    
+    <script>
+        function addEquipment() {
+            const equipmentDiv = document.createElement("div");
+            equipmentDiv.className = "equipmentItem";
+            equipmentDiv.innerHTML = `
+                <label for="equipmentName">Equipment Name <span class="required">*</span>:</label>
+                <input type="text" id="equipmentName" name="equipmentName[]" required>
+                <label for="additionalCost">Additional Cost:</label>
+                <input type="number" name="additionalCost[]" oninput="updateCostCategory()">
+                <button type="button" onclick="removeEquipment(this)">Delete Equipment</button>
+            `;
+            document.getElementById("equipmentList").appendChild(equipmentDiv);
+        }
+
+        function removeEquipment(btn) {
+            btn.parentElement.remove();
+        }
+
+        function addReview() {
+            const input = document.createElement("input");
+            input.type = "text";
+            input.name = "review[]";
+            document.getElementById("reviewList").appendChild(input);
+        }
+
+        function validateReviews() {
+            const reviewEls = document.querySelectorAll('input[name="review[]"]');
+            for (const review of reviewEls) {
+                const match = review.value.match(/(\d+(\.\d)?) out of 5 stars/);
+                if (!match || parseFloat(match[1]) > 5) {
+                    alert("Invalid review format detected!");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+        function updateCostCategory() {
+            const costEl = document.querySelector('input[name="cost"]');
+            const additionalCostEls = document.querySelectorAll('input[name="additionalCost[]"]');
+            
+            let totalCost = parseFloat(costEl.value) || 0;
+            additionalCostEls.forEach(el => totalCost += parseFloat(el.value) || 0);
+
+            let category;
+            if (totalCost === 0) category = 'Free';
+            else if (totalCost < 25) category = 'Cheap';
+            else if (totalCost > 100) category = 'Expensive';
+            else category = 'Affordable';
+
+            document.querySelector('#totalCost').textContent = "$" + totalCost.toFixed(2);
+            document.querySelector('#costCategory').textContent = category;
+        }
+    </script>
+</body>
+</html>
+]]></content><private><![CDATA[]]></private><author><![CDATA[ezaz]]></author></item>
